@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -24,8 +28,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -45,6 +47,9 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 button:hover {
   border-color: #646cff;
@@ -52,6 +57,22 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #cecece;
+  border: 1px solid grey;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  width: 100%;
+  color: #1a1a1a;
+}
+
+label:has(+ input) {
+  display: block;
+  text-align: start;
 }
 
 @media (prefers-color-scheme: light) {

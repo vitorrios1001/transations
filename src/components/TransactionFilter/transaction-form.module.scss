@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  color: black;
+
+  .formGroup {
+    text-align: start;
+    label {
+      margin-bottom: 0.5rem;
+    }
+
+    & + .formGroup {
+      margin-top: 1rem;
+    }
+  }
+
+  .errorText {
+    font-size: 0.75rem;
+    color: red;
+  }
+
+  button[type='submit'] {
+    margin-top: 1rem;
+  }
+}

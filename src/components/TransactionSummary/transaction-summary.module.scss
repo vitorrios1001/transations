@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  color: black;
+  margin-bottom: 1rem;
+
+  .summaryCard {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .iconWrapper {
+      background-color: antiquewhite;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 9999px;
+    }
+
+    p {
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    display: flex;
+
+    .summaryCard {
+      min-width: 16rem;
+    }
+  }
+}

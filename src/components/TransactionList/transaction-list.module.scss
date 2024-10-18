@@ -1,0 +1,10 @@
+.transactionsList {
+  width: 100%;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0;
+}
